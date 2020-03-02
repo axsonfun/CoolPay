@@ -1,0 +1,161 @@
+<!--
+Github | https://github.com/Dorasees/CoolPay
+Dorasees | https://www.dorasees.com
+-->
+<!Doctype Html> 
+<html> 
+<head> 
+<link href="css.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="mengkun">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <title>CoolPay Demo</title>
+	<script>
+	var setting = {
+        aliUrl: "支付宝URL",  
+    }
+	</script>
+</head>
+<body>
+<div class="code-item" id="code-zfb" style="background: linear-gradient(90deg,#20a0ff,#20b8ff);display:none">
+	<div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="https://nwzimg.wezhan.cn/contents/sitefiles2015/10075863/images/6996088.png" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">CoolPay</a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>扫码赞助</b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>请等待自动跳转</b></a></div>
+      <br>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>等待自动跳转</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额赞助</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="code-item" id="code-all" style="background: linear-gradient(90deg,#20a0ff,#20b8ff);display:none">
+	<div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="https://nwzimg.wezhan.cn/contents/sitefiles2015/10075863/images/6996088.png" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">CoolPay</a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>扫码赞助</b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>手机扫码赞助</b></a></div>
+      <br>
+      <div class="ui-qrcode"><div class="code-area">
+            <img id="page-url" src="页面二维码URL">
+        </div></div>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>截图二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-erweima"></i>
+          <div class="ui-padtop10"><b>扫描二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#20a0ff,#20b8ff);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>3</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额赞助</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="code-item" id="code-qq" style="background: linear-gradient(90deg,#E51F1F,#B81A1A);display:none">
+       <div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="https://nwzimg.wezhan.cn/contents/sitefiles2015/10075863/images/7644739.png" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">CoolPay</a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>扫码赞助</b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>长按扫码赞助</b></a></div>
+      <br>
+      <div class="ui-qrcode"><div class="code-area">
+            <img id="page-url" src="QQ二维码URL">
+        </div></div>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>长按二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-erweima"></i>
+          <div class="ui-padtop10"><b>扫描二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#E51F1F,#B81A1A);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>3</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额赞助</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <div class="code-item" id="code-wechat" style="background: linear-gradient(90deg,#44AF35,#378F2B);display:none">
+        <div id="ui-head" class="ui-panel ui-flex-pack-center ui-flex-align-center">
+    <img class="ui-qlogo" id="qlogo" src="https://nwzimg.wezhan.cn/contents/sitefiles2015/10075863/images/7644769.png" style="border-radius: 0px">
+    <div><h1><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;">CoolPay</a></h1><h2 id="qnick"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>扫码赞助</b></a></h2></div>
+  </div>
+  <div class="ui-box ui-panel ui-flex-align-center">
+    <div id="ui-content" class="ui-panel ui-flex-ver ui-flex-pack-center">
+      <div class="ui-tips"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>长按扫码赞助</b></a></div>
+      <br>
+      <div class="ui-qrcode"><div class="code-area">
+            <img id="page-url" src="微信二维码URL">
+        </div></div>
+      <div class="ui-paytext"></div>
+      <div id="ui-setps" class="ui-panel ui-flex-pack-center">
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>1</b></a></div>
+          <i class="icon iconfont icon-changan"></i>
+          <div class="ui-padtop10"><b>长按二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>2</b></a></div>
+          <i class="icon iconfont icon-erweima"></i>
+          <div class="ui-padtop10"><b>扫描二维码</b></div>
+        </div>
+        <div>
+          <div class="ui-circle"><a style="background: linear-gradient(90deg,#44AF35,#378F2B);-webkit-background-clip: text;-webkit-text-fill-color: transparent;"><b>3</b></a></div>
+          <i class="icon iconfont icon-icon-check-solid"></i>
+          <div class="ui-padtop10"><b>输入金额赞助</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+    <script>
+    if(navigator.userAgent.match(/Alipay/i)) { 
+	document.getElementById("code-zfb").style.display = "block";
+	setTimeout(window.location.href=setting.aliUrl,3);
+    } else if(navigator.userAgent.match(/MicroMessenger\//i)) {
+        document.getElementById("code-wechat").style.display = "block";
+    } else if(navigator.userAgent.match(/QQ\//i)) {
+        document.getElementById("code-qq").style.display = "block";
+    } else {
+        document.getElementById("code-all").style.display = "block";
+    }
+    </script>
+</body>
+</html>
