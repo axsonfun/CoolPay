@@ -1,5 +1,5 @@
 # CoolPay
-🌀可能是最花哨的三合一收款页
+## 🌀 可能是最花哨的三合一收款页
 
 ## 源码介绍
 ![](https://pic.downk.cc/item/5e5d0d4198271cb2b8cbda8e.png)
